@@ -120,7 +120,6 @@ const iterate = (state, iterations) => {
 
 const main = (pattern, iterations) => {
   let states = iterate(startPatterns[pattern], iterations);
-  console.log(states);
   let result = "";
   for (let state of states) {
     result += printCells(state);
